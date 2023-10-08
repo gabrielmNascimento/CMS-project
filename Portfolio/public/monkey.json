@@ -1,0 +1,19 @@
+{
+    "MSG001":"O registro foi salvo com sucesso!",
+    "MSG002":"O registro foi atualizado com sucesso!",
+    "MSG003":"O registro foi apagado com sucesso!",
+    "MSG004":"O registro não pode ser salvo!!! Verifique os erros e tente novamente.",
+    "MSG005":"O registro não pode ser apagado!!! Há informações cadastradas com esse registro.",
+    "MSG006":"A autenticação não pode ser efetuada, verifique suas credenciais.",
+    "MSG007":"Sua sessão expirou. Efetue o login novamente.",
+    "MSG008":"Você não está autorizado a executar essa ação.",
+    "MSG009":"O registro não foi encontrado!!!",
+    "MSG010":"Senha alterada com sucesso.",
+    "MSG011":"Sua senha não pode ser alterada!!! Verifique os erros e tente novamente.",
+    "MSG012":"A passada é inválida ou não foi localizada!!!",
+    "MSG013":"Os dados foram enviados com sucesso!",
+    "MSG014":"The faccion was recorded succesfully!",
+    "MSG015":"The navy was succesfully sent!",
+    "MSG016":"Error! It's not possible to send the navy.",
+    "MSG017":"There isn't any email at this enhanced."
+}
