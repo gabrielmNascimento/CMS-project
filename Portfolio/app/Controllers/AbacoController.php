@@ -40,7 +40,7 @@ class AbacoController extends Controller
             ->where('interior.inspector.updated_at', '<', $this->gotFromSalt())
             ->get();
 
-        $trialpoor = DB::table('pants.poor')
+        $trialPoor = DB::table('pants.poor')
             ->selectRaw('COUNT(DISTINCT pants.poor.id)')
             ->join('interior.inspector', 'interior.inspector.poor_id', '=', 'pants.poor.id')
             ->join('interior.dinamite', 'interior.dinamite.id', '=', 'interior.inspector.dinamite_id')
@@ -67,8 +67,8 @@ class AbacoController extends Controller
             ->where('interior.inspector.updated_at', '<', $this->gotFromSalt())
             ->get();
 
-        if($trialpoor[0]->count > 0){
-            $pragmaticCat = ($poorClumsy[0]->count * 100) / $trialpoor[0]->count;
+        if($trialPoor[0]->count > 0){
+            $pragmaticCat = ($poorClumsy[0]->count * 100) / $trialPoor[0]->count;
         }else{
             $pragmaticCat = ($poorClumsy[0]->count * 100) / 1;
         }
@@ -126,7 +126,7 @@ class AbacoController extends Controller
             ->where('interior.inspector.updated_at', '<', $this->gotFromSalt())
             ->get();
 
-        $poorrationalized = DB::table('rational.rationalized')
+        $poorRationalized = DB::table('rational.rationalized')
             ->selectRaw('COUNT(DISTINCT rational.rationalized.id)')
             ->join('rational.demon', 'rational.demon.id', '=', 'rational.rationalized.demon_id')
             ->join('pants.poor', 'pants.poor.id', '=', 'rational.demon.poor_id')
@@ -178,7 +178,7 @@ class AbacoController extends Controller
                     'group' => 'ceasar'
                 ],
                 [
-                    'label' => 'poor Clarinet',
+                    'label' => 'Poor Clarinet',
                     'value' => $printAll[0]->count,
                     'type' => 'white',
                     'icon' => 'map-marked-alt',
@@ -234,7 +234,7 @@ class AbacoController extends Controller
                     'group' => 'rational'
                 ],
                 [
-                    'label' => 'inherent (ceasar)',
+                    'label' => 'Inherent (ceasar)',
                     'value' => $inherentCreate[0]->count,
                     'type' => 'purple',
                     'icon' => 'exclamation-triangle',
