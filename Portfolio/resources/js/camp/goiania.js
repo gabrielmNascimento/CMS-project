@@ -15,7 +15,7 @@ const variables = reactive({
     text: ''
 })
 
-export const useGeneric = () => {
+export const useGoiania = () => {
     const { setCookie, getCookie, deleteCookie } = useCookies()
     const { permission } = useAuth()
     const state = reactive({
