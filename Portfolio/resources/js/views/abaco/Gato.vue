@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { useGato } from '../../composition/abacos/gato'
+import { useGato } from '../../camp/abacos/gato'
 import Page from '../../components/layout/Page'
 import Card from '../../components/content/Card'
 import SmallBox from '../../components/content/SmallBox'
